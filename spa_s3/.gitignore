@@ -1,0 +1,5 @@
+.terraform.lock.hcl
+.terraform
+static/testing-react-apps
+terraform.tfstate
+terraform.tfstate.backup
