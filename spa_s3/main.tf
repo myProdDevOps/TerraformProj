@@ -16,5 +16,5 @@ module "s3" {
     is_force_destroy         = var.bucket_config.is_force_destroy
     environment              = var.bucket_config.environment
   }
-  depends_on_list = [module.cloudfront.cloudfront_distribution_id]
+  depends_on_list = tolist([module.cloudfront.cloudfront_distribution_id])
 }
